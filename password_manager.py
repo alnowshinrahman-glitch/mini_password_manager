@@ -28,4 +28,18 @@ def add_password(passwords):
  print(f"Password for {website} saved successfully!")
 
 def view_password(passwords):
+ choosen_website = input("Please enter the website you want to check: ")
+ if choosen_website in passwords:
+  username= passwords[choosen_website]["username"]
+  password=passwords[choosen_website]["password"]
+
+  print("Username:", username)
+  print("password:", password)
+ else:
+  print("Website not found!") 
+
+
+
+  
+
  
