@@ -38,6 +38,30 @@ def view_password(passwords):
  else:
   print("Website not found!") 
 
+def main():
+ passwords = load_data()
+ while True:
+  print("1. Add password")
+  print("2. View password ")
+  print("3. Exit ") 
+
+  choice = input("Select an option: ")
+
+  if choice == "1" :
+   add_password(passwords)
+  elif choice == "2":
+   view_password(passwords)
+
+  elif choice == "3":
+   break 
+  else:
+   print("Invalid input.")
+
+if __name__ == "__main__" :
+ main()
+   
+   
+  
 
 
   
